@@ -1,35 +1,69 @@
-/* Professional Color Palette & Gradients */
+/* Root colors (optional) */
 :root {
-    --primary-gradient: linear-gradient(135deg, #2C3E50, #4CA1AF); /* Dark teal to slate */
-    --secondary-gradient: linear-gradient(135deg, #D38312, #A83279); /* Warm gold to rich magenta */
-    --accent-color: #F5A623; /* Muted gold for highlights */
-    --card-bg: #ffffff; /* Keep cards clean */
-    --section-bg: #F8F9FA; /* Light grayish background for sections */
+    --navbar-bg: #111; /* Dark black */
+    --navbar-text: #fff;
+    --navbar-hover: #F5A623; /* Accent hover */
+    --btn-primary: #222; /* Dark button */
+    --btn-primary-hover: #F5A623;
 }
 
-/* Navbar Styles */
+/* Navbar background */
 .navbar {
-    background: linear-gradient(135deg, #2C3E50, #4CA1AF); /* Professional gradient */
+    background-color: var(--navbar-bg) !important;
     padding: 1rem 0;
 }
 
+/* Navbar Brand Fix */
 .navbar-brand {
     font-weight: 700;
     font-size: 1.8rem;
     color: #fff;
+    z-index: 10; /* Ensure it's above toggler or other elements */
+    position: relative;
+    transition: color 0.3s ease;
 }
 
+/* Hover effect */
+.navbar-brand:hover {
+    color: #F5A623; /* Accent color on hover */
+    text-decoration: none; /* Ensure underline doesn't appear */
+}
+
+
+/* Optional: make sure dropdown / toggler don't overlap */
+.navbar .navbar-collapse {
+    z-index: 1;
+    position: relative;
+}
+
+/* Nav links */
 .navbar-nav .nav-link {
-    color: #fff;
+    color: var(--navbar-text);
     font-weight: 500;
     margin-right: 15px;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #F5A623; /* Accent color */
+    color: var(--navbar-hover);
 }
 
+/* Dropdown menu */
+.navbar-nav .dropdown-menu {
+    background-color: #222; /* Dark dropdown */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: var(--navbar-hover);
+    color: #000;
+}
+
+/* Login / Register buttons */
 .btn-outline-light {
     border: 2px solid #fff;
     color: #fff;
@@ -39,19 +73,23 @@
 
 .btn-outline-light:hover {
     background: #fff;
-    color: #2C3E50;
+    color: var(--navbar-bg);
 }
 
 .btn-light {
-    background: #F5A623; /* Accent color */
+    background: var(--btn-primary);
     color: #fff;
     font-weight: 600;
     transition: all 0.3s ease;
+    border-radius: 25px;
 }
 
 .btn-light:hover {
-    opacity: 0.9;
+    background: var(--btn-primary-hover);
+    color: #000;
 }
+
+
 
 
 /* Hero Section */
@@ -103,24 +141,26 @@
     font-weight: 700;
 }
 
-.hero .btn {
-    display: inline-block;
-    background: linear-gradient(90deg, #ff7e5f, #feb47b);
-    color: white;
+.start-btn {
+    background: #000 !important;
+    color: #fff !important;
     font-weight: 700;
-    font-size: 1.2rem;
-    padding: 15px 40px;
-    border-radius: 50px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    font-size: 1.1rem;                /* Bigger text */
+    letter-spacing: 0.7px;
+    padding: 14px 32px !important;    /* Larger button */
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
 
-.hero .btn:hover {
-    transform: scale(1.1);
-    opacity: 0.95;
+.start-btn:hover {
+    background: #111 !important;
+    color: #F5A623 !important;
+    border-color: #F5A623 !important;
+    box-shadow: 0 6px 18px rgba(245,166,35,0.45);
+    transform: translateY(-3px);      /* Slight lift on hover */
 }
+
+
 
 /* Simple fade-in animation */
 @keyframes fadeInUp {
@@ -162,16 +202,21 @@
 .search-section input, .search-section select {
     border-radius: 50px;
 }
-.search-section button {
-    border-radius: 50px;
-    background: var(--primary-gradient);
-    color: white;
+#searchBtn {
+    background: #000 !important;
+    color: #fff !important;
     font-weight: 600;
+    border-radius: 50px;
     transition: all 0.3s ease;
 }
-.search-section button:hover {
-    background: var(--secondary-gradient);
+
+#searchBtn:hover {
+    background: #111 !important;
+    color: #F5A623 !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
 }
+
 
 /* Featured Properties */
 .featured {
@@ -311,45 +356,135 @@
     color: #555;
 }
 
-/* Footer */
-footer {
-    background: #1a1a1a;
-    color: #aaa;
-    padding: 80px 20px 40px 20px;
+/* Premium Footer Styling */
+.pro-footer {
+    background: #0e0e0e;              /* deep black */
+    color: #cfcfcf;
+    padding: 70px 0 30px;
+    font-size: 14px;
 }
-footer a {
-    color: var(--accent-color);
-    text-decoration: none;
-}
-footer a:hover { text-decoration: underline; }
+
+/* Top Row */
 .footer-top {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
+    gap: 40px;
 }
+
 .footer-col {
-    flex: 1 1 200px;
-    margin: 20px;
+    flex: 1 1 230px;
 }
-.footer-col h5 { font-weight: 700; margin-bottom: 20px; color:white; }
-.footer-bottom { text-align: center; border-top: 1px solid #333; padding-top: 20px; }
+
+.footer-col h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-col h5::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: var(--accent-color);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    border-radius: 2px;
+}
+
+/* Links */
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #cfcfcf;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+    padding-left: 4px;
+}
+
+/* Contact */
+.footer-contact li {
+    margin-bottom: 6px;
+}
+
+/* Newsletter */
 .newsletter input {
-    border-radius: 50px;
+    border-radius: 40px;
     padding: 10px 15px;
     width: 70%;
-    margin-right: 10px;
+    border: 1px solid #444;
+    background: #1a1a1a;
+    color: #eee;
 }
+
+.newsletter input::placeholder {
+    color: #777;
+}
+
 .newsletter button {
-    border-radius: 50px;
+    border-radius: 40px;
     padding: 10px 20px;
     background: var(--accent-color);
     border: none;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     transition: 0.3s;
 }
-.newsletter button:hover { opacity: 0.85; }
+
+.newsletter button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #262626;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.footer-social a {
+    font-size: 16px;
+    margin: 0 10px;
+    color: #cfcfcf;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-top {
+        text-align: center;
+    }
+    .footer-col h5::after {
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .newsletter form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .newsletter input {
+        width: 100%;
+    }
+}
+
+
 /* Gallery Thumbnails */
 .property-gallery img {
     cursor: pointer;
@@ -426,7 +561,7 @@ footer a:hover { text-decoration: underline; }
 }
 
 
-
+/*This is for banner section css in home page*/
 .banner-card {
     height: 230px;
     border: none;

@@ -11,23 +11,21 @@
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">All Listings</a></li>
 
-<li class="nav-item"><a class="nav-link text-white" href="#">All Listings</a></li>
-
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Explore</a>
-        <ul class="dropdown-menu">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore</a>
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Properties for Sale</a></li>
             <li><a class="dropdown-item" href="#">Properties for Rent</a></li>
             <li><a class="dropdown-item" href="#">Rooms / PG / Hostels</a></li>
-        </ul>
-    </li>
+          </ul>
+        </li>
 
-    <li class="nav-item"><a class="nav-link text-white" href="#">Categories</a></li>
-    <li class="nav-item"><a class="nav-link text-white" href="#">How It Works</a></li>
-    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-
+        <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">How It Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
       </ul>
 
       <!-- Login & Register buttons -->

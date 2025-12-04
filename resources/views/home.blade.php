@@ -10,7 +10,9 @@
         <h1>Find Your Perfect Property or Rental Home</h1>
 <p>Search, Explore & Discover Properties & To-Let Listings Easily with <span>ProRent</span> – Your Trusted Real Estate Platform</p>
 
-        <a href="#" class="btn">Start Searching</a>
+        <a href="#" class="btn start-btn rounded-pill px-5 py-3">Start Searching</a>
+
+
     </div>
 </section>
 
@@ -77,7 +79,7 @@
     </div>
 
     <!-- Search Button -->
-    <div class="col-md-12 col-lg-2">
+   <div class="col-md-12 col-lg-2">
         <button id="searchBtn" class="btn btn-dark w-100 rounded-pill py-2">
     Search
 </button>
