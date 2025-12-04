@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateAdminProfilesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('admin_profiles', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('admin_id'); // FK to admins table
+            $table->string('phone')->nullable();
+            $table->text('address')->nullable();
+            $table->string('profile_image')->nullable();
+             $table->string('profile_image_thumb')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('admin_profiles');
+    }
+}
