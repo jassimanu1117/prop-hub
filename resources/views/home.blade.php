@@ -3,7 +3,6 @@
 @section('title', 'Home - Property & To-Let Listings')
 
 @section('content')
-
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-overlay"></div>
@@ -527,66 +526,82 @@
     </div>
 </section>
 
-<style>
-.step-card {
-    background: #fff;
-    transition: 0.3s ease-in-out;
-    border: 1px solid #eee;
-}
-.step-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
 
-.icon-box {
-    width: 60px;
-    height: 60px;
-    background: #000;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    margin: auto;
-}
-</style>
 
-<!-- Statistics -->
-<section class="statistics">
-    <h2>Our Achievements</h2>
-    <div class="row text-center g-4">
-        <div class="col-md-3"><div class="stat">500+</div><div class="stat-text">Properties Listed</div></div>
-        <div class="col-md-3"><div class="stat">10k+</div><div class="stat-text">Happy Tenants</div></div>
-        <div class="col-md-3"><div class="stat">15k+</div><div class="stat-text">Searches Completed</div></div>
-        <div class="col-md-3"><div class="stat">50+</div><div class="stat-text">Cities Covered</div></div>
-    </div>
-</section>
-
-<!-- Testimonials -->
-<section class="testimonials">
-    <h2>What Our Users Say</h2>
+<!-- Banners Section -->
+<section class="banner-section py-5">
     <div class="container">
-        <div class="row g-4 justify-content-center">
+        <h2 class="fw-bold mb-4 text-center">Popular Listings</h2>
+
+        <div class="row g-4">
+
+            <!-- Banner 1 -->
             <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p>"ProRent helped me find my dream apartment in just 3 days! Smooth digital experience."</p>
-                    <strong>- Rajesh Kumar</strong>
+                <div class="banner-card shadow-sm rounded-4 overflow-hidden position-relative">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80"
+                         class="banner-img" alt="Top Agents">
+
+                    <div class="banner-content p-3">
+                        <h5 class="fw-bold mb-1">Top Rated Agents</h5>
+                        <p class="text-light small mb-2">Find trusted professionals near you.</p>
+                        <a href="#" class="btn btn-dark btn-sm rounded-pill px-3">View Agents</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- Banner 2 -->
             <div class="col-md-4">
-                <div class="testimonial-card">
-                    <p>"The platform is intuitive and professional. Renting a house has never been easier."</p>
-                    <strong>- Anita Sharma</strong>
+                <div class="banner-card shadow-sm rounded-4 overflow-hidden position-relative">
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=900&q=80"
+                         class="banner-img" alt="Luxury Homes">
+
+                    <div class="banner-content p-3">
+                        <h5 class="fw-bold mb-1">Luxury Homes</h5>
+                        <p class="text-light small mb-2">Explore premium luxury apartments & villas.</p>
+                        <a href="#" class="btn btn-dark btn-sm rounded-pill px-3">Explore</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- Banner 3 -->
+            <div class="col-md-4">
+                <div class="banner-card shadow-sm rounded-4 overflow-hidden position-relative">
+                    <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=900&q=80"
+                         class="banner-img" alt="New Listings">
+
+                    <div class="banner-content p-3">
+                        <h5 class="fw-bold mb-1">New Listings</h5>
+                        <p class="text-light small mb-2">Fresh properties added every day.</p>
+                        <a href="#" class="btn btn-dark btn-sm rounded-pill px-3">View Listings</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
+
+<!-- Post Property Banner - dynamic-ready -->
+<section class="post-property-banner py-5">
+  <div class="container text-center position-relative">
+    <div class="banner-inner p-4 rounded-4 mx-auto" style="max-width:980px;">
+      <h2 class="text-white fw-bold mb-2">Post Your Property For FREE</h2>
+      <p class="text-light mb-3" style="max-width:720px; margin:auto;">
+        List your house, apartment, PG or commercial space and reach thousands of active buyers & tenants daily.
+      </p>
+
+      <a href="" class="btn cta-btn rounded-pill px-4 py-2">
+        + Add Property
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
 @endsection
 
-@push('scripts')
 @push('scripts')
 <script>
 document.addEventListener("DOMContentLoaded", function () {

@@ -43,6 +43,7 @@ class CreateListingsTable extends Migration
             $table->boolean('is_furnished')->default(false);
             $table->boolean('is_ready_to_move')->default(false);
             $table->boolean('is_verified')->default(false);
+            $table->boolean('is_popular ')->default(false);
             $table->boolean('is_featured')->default(false);
             $table->boolean('is_hot')->default(false);
 
