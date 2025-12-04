@@ -8,7 +8,7 @@
         <a href="#" class="menu-toggle"><i class="bi bi-box-seam"></i><span>Products</span><i class="bi bi-chevron-down ms-auto"></i></a>
         <div class="submenu">
             <a href="{{ route('admin.categories.index') }}"><i class="bi bi-tags"></i><span>Categories</span></a>
-            <a href="{{ route('admin.categories.index') }}"><i class="bi bi-tags"></i><span>Property Categories</span></a>
+            <a href="{{ route('admin.property.categories.index') }}"><i class="bi bi-tags"></i><span>Categories</span></a>
 
             <a href="{{ route('admin.brands.index') }}"><i class="bi bi-star"></i><span>Brands</span></a>
              {{-- 

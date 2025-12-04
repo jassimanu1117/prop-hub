@@ -22,7 +22,7 @@ class AdminPropertyCategoryController extends Controller
         // Fetch property categories with parent name also
         $categories = PropertyCategory::with('parent')
             ->orderBy('created_at', 'desc')
-            ->paginate(10);
+            ->paginate(10);  //Because using laravel pagination
 
         return view('dashboard.admin.property-categories.index', compact('categories'));
     }
@@ -96,9 +96,11 @@ class AdminPropertyCategoryController extends Controller
         $category = PropertyCategory::findOrFail($id);
 
         // Fetch property categories with parent name also
-        $categories = PropertyCategory::with('parent')
-            ->orderBy('created_at', 'desc')
-            ->paginate(10);
+        // Fetch all categories except the one being edited
+        // to prevent selecting itself as parent
+          $categories = PropertyCategory::where('id', '!=', $id)
+                    ->orderBy('name')
+                    ->get();
 
         return view('dashboard.admin.property-categories.edit', compact('category','categories'));
     }
@@ -129,6 +131,13 @@ class AdminPropertyCategoryController extends Controller
             $data['slug'] = Str::slug($data['name']);
         }
 
+         // UPDATE FIELDS
+        $category->parent_id   = $request->parent_id ?? null;
+        $category->name        = $request->name;
+        $category->type_group  = $request->type_group;  // ← THIS IS IMPORTANT
+        $category->description = $request->description;
+        $category->status      = $request->status ?? 'active';
+
         // Image upload
         if ($request->hasFile('image')) {
 
@@ -147,8 +156,17 @@ class AdminPropertyCategoryController extends Controller
             $data['image_thumb'] = $upload['thumbnail'];
         }
 
-        // Update in DB
-        $category->update($data);
+        // FINAL UPDATE (single call)
+       $category->update([
+        'parent_id'   => $data['parent_id'] ?? null,
+        'name'        => $data['name'],
+        'slug'        => $data['slug'] ?? $category->slug,
+        'type_group'  => $data['type_group'],  // ← FIXED
+        'description' => $data['description'],
+        'status'      => $data['status'],
+        'image_path'  => $data['image_path']  ?? $category->image_path,
+        'image_thumb' => $data['image_thumb'] ?? $category->image_thumb,
+      ]);
 
         return redirect()
             ->route('admin.property.categories.index')

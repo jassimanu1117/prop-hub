@@ -14,6 +14,7 @@ class PropertyCategory extends Model
         'group', // property / tolet
         'name',
         'slug',
+        'description',
         'image_path',
         'image_thumb',
         'status'

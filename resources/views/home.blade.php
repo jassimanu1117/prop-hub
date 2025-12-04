@@ -79,7 +79,10 @@
 
     <!-- Search Button -->
     <div class="col-md-12 col-lg-2">
-        <button id="searchBtn" class="btn w-100">Search</button>
+        <button id="searchBtn" class="btn btn-dark w-100 rounded-pill py-2">
+    Search
+</button>
+
     </div>
 
 </div>
@@ -129,7 +132,10 @@
                     <p class="fw-bold text-primary fs-5">₹18,000 / month</p>
 
                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-outline-primary w-50">View Details</a>
+                        <a href="#" class="btn btn-dark rounded-pill w-50 px-4 py-2">
+    View Details
+</a>
+
                         <a href="https://wa.me/919999999999" target="_blank" class="btn btn-success w-50 d-flex justify-content-center align-items-center">
                             <i class="bi bi-whatsapp fs-5 me-1"></i> WhatsApp
                         </a>
@@ -162,7 +168,10 @@
                     <p class="fw-bold text-primary fs-5">₹45,000 / month</p>
 
                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-outline-primary w-50">View Details</a>
+                      <a href="#" class="btn btn-dark rounded-pill w-50 px-4 py-2">
+    View Details
+</a>
+
                         <a href="https://wa.me/919999999999" target="_blank" class="btn btn-success w-50 d-flex justify-content-center align-items-center">
                             <i class="bi bi-whatsapp fs-5 me-1"></i> WhatsApp
                         </a>
@@ -195,7 +204,10 @@
                     <p class="fw-bold text-primary fs-5">₹22,000 / month</p>
 
                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-outline-primary w-50">View Details</a>
+                      <a href="#" class="btn btn-dark rounded-pill w-50 px-4 py-2">
+    View Details
+</a>
+
                         <a href="https://wa.me/919999999999" target="_blank" class="btn btn-success w-50 d-flex justify-content-center align-items-center">
                             <i class="bi bi-whatsapp fs-5 me-1"></i> WhatsApp
                         </a>
@@ -249,7 +261,10 @@
                     </div>
                     <p class="fw-bold text-primary fs-5">₹8,500 / month</p>
                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-outline-primary w-50">View Details</a>
+                       <a href="#" class="btn btn-dark rounded-pill w-50 px-4 py-2">
+    View Details
+</a>
+
                         <a href="https://wa.me/919999999999?text=Hi%2C%20I%20am%20interested%20in%20this%20room" target="_blank" class="btn btn-success w-50 d-flex justify-content-center align-items-center">
                             <i class="bi bi-whatsapp fs-5 me-1"></i> WhatsApp
                         </a>
@@ -278,7 +293,10 @@
                     </div>
                     <p class="fw-bold text-primary fs-5">₹5,000 / month</p>
                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-outline-primary w-50">View Details</a>
+                       <a href="#" class="btn btn-dark rounded-pill w-50 px-4 py-2">
+    View Details
+</a>
+
                         <a href="https://wa.me/919999999999?text=Interested%20in%20PG%20Room" target="_blank" class="btn btn-success w-50 d-flex justify-content-center align-items-center">
                             <i class="bi bi-whatsapp fs-5 me-1"></i> WhatsApp
                         </a>
@@ -307,7 +325,10 @@
                     </div>
                     <p class="fw-bold text-primary fs-5">₹7,500 / month</p>
                     <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-outline-primary w-50">View Details</a>
+                        <a href="#" class="btn btn-dark rounded-pill w-50 px-4 py-2">
+    View Details
+</a>
+
                         <a href="https://wa.me/919999999999?text=Interested%20in%201BHK%20Room" target="_blank" class="btn btn-success w-50 d-flex justify-content-center align-items-center">
                             <i class="bi bi-whatsapp fs-5 me-1"></i> WhatsApp
                         </a>
@@ -321,59 +342,215 @@
 
 
 
-<!-- Property Categories -->
-<section class="categories container mt-5">
-    <h2>Explore by Category</h2>
-    <div class="row g-4">
-        <div class="col-md-3">
-            <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=400&q=80" alt="Apartment">
+<!-- Top Agents -->
+<section class="agents container mt-5">
+    <h2 class="mb-4 fw-semibold">Top Real Estate Agents</h2>
 
-                <h5>Apartment</h5>
-            </div>
-        </div>
+    <div class="row g-4">
+
+        <!-- Agent Card -->
         <div class="col-md-3">
-            <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=400&q=80" alt="House">
-                <h5>House</h5>
+            <div class="agent-card shadow-sm border-0 p-3 rounded">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="agent-img rounded-circle mx-auto d-block" alt="Agent">
+                
+                <h5 class="text-center mt-3 mb-1">Rohit Sharma</h5>
+                <p class="text-center text-muted small m-0">Sharma Estates</p>
+
+                <div class="text-center small text-success mt-1">⭐ 4.8 (95 reviews)</div>
+
+                <div class="agent-meta mt-3">
+                    <div class="d-flex justify-content-between small">
+                        <span>Total Listings</span>
+                        <strong>120</strong>
+                    </div>
+                    <div class="d-flex justify-content-between small">
+                        <span>Experience</span>
+                        <strong>7 yrs</strong>
+                    </div>
+                    <div class="d-flex justify-content-between small">
+                        <span>Location</span>
+                        <strong>Delhi NCR</strong>
+                    </div>
+                </div>
+
+                <div class="text-center mt-3">
+                    <a href="#" class="btn btn-dark btn-sm rounded-pill px-3">View Profile</a>
+                </div>
             </div>
         </div>
+
+        <!-- Agent Card -->
         <div class="col-md-3">
-            <div class="category-card">
-                <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=400&q=80" alt="Studio">
-                <h5>Studio</h5>
+            <div class="agent-card shadow-sm border-0 p-3 rounded">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="agent-img rounded-circle mx-auto d-block" alt="Agent">
+
+                <h5 class="text-center mt-3 mb-1">Priya Verma</h5>
+                <p class="text-center text-muted small m-0">Priya Realty</p>
+
+                <div class="text-center small text-success mt-1">⭐ 4.9 (150 reviews)</div>
+
+                <div class="agent-meta mt-3">
+                    <div class="d-flex justify-content-between small">
+                        <span>Total Listings</span>
+                        <strong>89</strong>
+                    </div>
+                    <div class="d-flex justify-content-between small">
+                        <span>Experience</span>
+                        <strong>5 yrs</strong>
+                    </div>
+                    <div class="d-flex justify-content-between small">
+                        <span>Location</span>
+                        <strong>Delhi</strong>
+                    </div>
+                </div>
+
+                <div class="text-center mt-3">
+                    <a href="#" class="btn btn-dark btn-sm rounded-pill px-3">View Profile</a>
+                </div>
             </div>
         </div>
+
+         <!-- Agent Card -->
         <div class="col-md-3">
-            <div class="category-card">
-               <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=400&q=80" alt="Shared">
-                <h5>PG / Shared</h5>
+            <div class="agent-card shadow-sm border-0 p-3 rounded">
+                <img src="https://randomuser.me/api/portraits/men/44.jpg" class="agent-img rounded-circle mx-auto d-block" alt="Agent">
+
+                <h5 class="text-center mt-3 mb-1">Ankit</h5>
+                <p class="text-center text-muted small m-0">Ankit Realty</p>
+
+                <div class="text-center small text-success mt-1">⭐ 3.9 (120 reviews)</div>
+
+                <div class="agent-meta mt-3">
+                    <div class="d-flex justify-content-between small">
+                        <span>Total Listings</span>
+                        <strong>79</strong>
+                    </div>
+                    <div class="d-flex justify-content-between small">
+                        <span>Experience</span>
+                        <strong>4 yrs</strong>
+                    </div>
+                    <div class="d-flex justify-content-between small">
+                        <span>Location</span>
+                        <strong>Mumbai</strong>
+                    </div>
+                </div>
+
+                <div class="text-center mt-3">
+                    <a href="#" class="btn btn-dark btn-sm rounded-pill px-3">View Profile</a>
+                </div>
             </div>
         </div>
+
+
+         <!-- Agent Card -->
+        <div class="col-md-3">
+            <div class="agent-card shadow-sm border-0 p-3 rounded">
+                <img src="https://randomuser.me/api/portraits/men/46.jpg" class="agent-img rounded-circle mx-auto d-block" alt="Agent">
+
+                <h5 class="text-center mt-3 mb-1">Suresh</h5>
+                <p class="text-center text-muted small m-0">Suresh Realty</p>
+
+                <div class="text-center small text-success mt-1">⭐ 4.0 (110 reviews)</div>
+
+                <div class="agent-meta mt-3">
+                    <div class="d-flex justify-content-between small">
+                        <span>Total Listings</span>
+                        <strong>59</strong>
+                    </div>
+                    <div class="d-flex justify-content-between small">
+                        <span>Experience</span>
+                        <strong>3 yrs</strong>
+                    </div>
+                    <div class="d-flex justify-content-between small">
+                        <span>Location</span>
+                        <strong>Delhi</strong>
+                    </div>
+                </div>
+
+                <div class="text-center mt-3">
+                    <a href="#" class="btn btn-dark btn-sm rounded-pill px-3">View Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat more agent cards -->
     </div>
 </section>
 
 <!-- How It Works -->
-<section class="how-it-works">
-    <h2>How It Works</h2>
-    <div class="steps">
-        <div class="step">
-            <i class="fa fa-search"></i>
-            <h5>Search Property</h5>
-            <p>Find properties based on location, type, and budget.</p>
-        </div>
-        <div class="step">
-            <i class="fa fa-home"></i>
-            <h5>Visit & Explore</h5>
-            <p>Schedule visits to explore properties in real life.</p>
-        </div>
-        <div class="step">
-            <i class="fa fa-file-contract"></i>
-            <h5>Rent & Move-In</h5>
-            <p>Complete digital agreements and move in seamlessly.</p>
+<section class="how-it-works py-5" style="background:#f8f9fa;">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">How It Works</h2>
+
+        <div class="row g-4">
+
+            <!-- Step 1 -->
+            <div class="col-md-4">
+                <div class="step-card text-center p-4 shadow-sm h-100 rounded-4">
+                    <div class="icon-box mb-3">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <h5 class="fw-semibold">Search Property</h5>
+                    <p class="text-muted small">
+                        Browse from thousands of verified properties based on location, budget, and category.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-md-4">
+                <div class="step-card text-center p-4 shadow-sm h-100 rounded-4">
+                    <div class="icon-box mb-3">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <h5 class="fw-semibold">Visit & Explore</h5>
+                    <p class="text-muted small">
+                        Schedule site visits with agents, view photos, videos & virtual tours before deciding.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-md-4">
+                <div class="step-card text-center p-4 shadow-sm h-100 rounded-4">
+                    <div class="icon-box mb-3">
+                        <i class="fa fa-file-contract"></i>
+                    </div>
+                    <h5 class="fw-semibold">Close Deal Smoothly</h5>
+                    <p class="text-muted small">
+                        Secure booking, finalize paperwork, and move-in with complete support from our team.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
+
+<style>
+.step-card {
+    background: #fff;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #eee;
+}
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin: auto;
+}
+</style>
 
 <!-- Statistics -->
 <section class="statistics">
